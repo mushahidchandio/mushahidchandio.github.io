@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #4f46e5, #0ea5e9);
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header p {
+    opacity: 0.9;
+}
+
+/* SECTIONS */
+section {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    animation: fadeIn 0.8s ease-in;
+}
+
+h2 {
+    color: #38bdf8;
+}
+
+/* PROJECT CARDS */
+.card {
+    background: #0f172a;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 4px solid #38bdf8;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background: #111c33;
+}
+
+.card a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* LINKS */
+a {
+    color: #38bdf8;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    section {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
